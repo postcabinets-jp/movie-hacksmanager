@@ -1,0 +1,193 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "role": "admin",
+      "status": "active",
+      "lastLogin": "2024-04-06T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "username": "田中太郎",
+      "email": "tanaka@example.com",
+      "role": "user",
+      "status": "active",
+      "lastLogin": "2024-04-05T15:30:00Z"
+    },
+    {
+      "name": "まえだ",
+      "email": "",
+      "role": "user",
+      "status": "active",
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "プログラミング",
+      "description": "プログラミング関連の動画",
+      "color": "#4CAF50"
+    },
+    {
+      "id": 2,
+      "name": "デザイン",
+      "description": "デザイン関連の動画",
+      "color": "#2196F3"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "JavaScript",
+      "color": "#FFC107"
+    },
+    {
+      "id": 2,
+      "name": "React",
+      "color": "#03A9F4"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "title": "React入門",
+      "description": "Reactの基礎を学ぶ",
+      "categoryId": 1,
+      "tags": [
+        1,
+        2
+      ],
+      "duration": 3000,
+      "status": "published",
+      "createdAt": "2024-04-01T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "UIデザインの基礎",
+      "description": "UIデザインの基本原則",
+      "categoryId": 2,
+      "tags": [
+        2
+      ],
+      "duration": 2400,
+      "status": "published",
+      "createdAt": "2024-04-02T14:00:00Z"
+    }
+  ],
+  "viewing_records": [
+    {
+      "id": 1,
+      "userId": 2,
+      "videoId": 1,
+      "startTime": "2024-04-06T13:00:00Z",
+      "endTime": "2024-04-06T13:50:00Z",
+      "watchTime": 3000,
+      "progress": 100,
+      "completed": true,
+      "lastPosition": 3000
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "videoId": 2,
+      "startTime": "2024-04-06T14:00:00Z",
+      "endTime": "2024-04-06T14:30:00Z",
+      "watchTime": 1800,
+      "progress": 75,
+      "completed": false,
+      "lastPosition": 1800
+    }
+  ],
+  "analytics": {
+    "totalViews": 2000,
+    "totalUsers": 50,
+    "averageWatchTime": 15,
+    "completionRate": 75,
+    "viewsByDate": [
+      {
+        "date": "2024-04-01",
+        "views": 500
+      },
+      {
+        "date": "2024-04-02",
+        "views": 700
+      },
+      {
+        "date": "2024-04-03",
+        "views": 800
+      }
+    ]
+  },
+  "system-logs": [
+    {
+      "id": 1,
+      "timestamp": "2024-04-06T10:00:00Z",
+      "level": "info",
+      "type": "system",
+      "message": "システム起動",
+      "user": "system",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": 2,
+      "timestamp": "2024-04-06T10:05:00Z",
+      "level": "warn",
+      "type": "security",
+      "message": "ログイン失敗",
+      "user": "unknown",
+      "ipAddress": "192.168.1.100"
+    }
+  ],
+  "settings": {
+    "siteName": "動画管理システム",
+    "siteDescription": "社内向け動画管理プラットフォーム",
+    "maintenanceMode": false,
+    "allowUserRegistration": true,
+    "videoSettings": {
+      "maxSize": 1024,
+      "allowedFormats": [
+        "mp4",
+        "mov",
+        "avi"
+      ],
+      "savePath": "/uploads/videos"
+    },
+    "emailNotifications": {
+      "enabled": true,
+      "fromEmail": "noreply@example.com",
+      "smtpSettings": {
+        "host": "smtp.example.com",
+        "port": 587,
+        "secure": true
+      }
+    }
+  },
+  "email-templates": [
+    {
+      "name": "ユーザー登録",
+      "subject": "ご登録ありがとうございます",
+      "body": "{{username}}様、\n\nご登録ありがとうございます。\nこれからもよろしこぷり",
+      "type": "registration",
+      "variables": [],
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "パスワードリセット",
+      "subject": "パスワードリセットのご案内",
+      "type": "password-reset",
+      "body": "{{username}}様、\n\nパスワードリセットの手続きを行います。"
+    },
+    {
+      "name": "つｔ",
+      "subject": "こんにちは",
+      "body": "どうもどうも",
+      "type": "verification",
+      "variables": [],
+      "id": 3
+    }
+  ]
+}

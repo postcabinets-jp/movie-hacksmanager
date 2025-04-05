@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/movie-hacksmanager/static/js/main.d36dcd05.js",
+    "index.html": "/movie-hacksmanager/index.html",
+    "main.d36dcd05.js.map": "/movie-hacksmanager/static/js/main.d36dcd05.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d36dcd05.js"
+  ]
+}

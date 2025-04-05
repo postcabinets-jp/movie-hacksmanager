@@ -1,0 +1,10 @@
+{
+  "/api/*": "/$1",
+  "/api/viewing-records/export": "/viewing_records",
+  "/api/viewing-records": "/viewing_records",
+  "/api/viewing-records/:id": "/viewing_records/:id",
+  "/api/viewing-records/stats": "/analytics",
+  "/api/settings": "/settings",
+  "/api/email-templates": "/email-templates",
+  "/api/email-templates/:id": "/email-templates/:id"
+} 
