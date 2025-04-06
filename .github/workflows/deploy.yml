@@ -19,9 +19,11 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
+        working-directory: ./admin
         run: npm ci
 
       - name: Build
+        working-directory: ./admin
         run: npm run build
         env:
           REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
@@ -30,4 +32,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build 
+          publish_dir: ./admin/build 
